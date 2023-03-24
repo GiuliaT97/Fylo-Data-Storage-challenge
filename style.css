@@ -1,0 +1,363 @@
+:root{
+
+    --ff-raleway:'Raleway', sans-serif;
+    --c-lightblue:hsl(243, 100%, 93%);
+    /*Paragrafo nuvola*/
+    --c-grey:hsl(229, 7%, 55%);
+    /*Background divs*/
+    --c-blue:hsl(228, 56%, 26%);
+    /*Body Color*/
+    --c-darkblue:hsl(229, 57%, 11%);
+
+}
+
+
+body{
+
+
+    background-color: var(--c-darkblue);
+    
+    background-image: url(images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+
+}
+
+.container{
+
+   display: flex;
+   gap:2rem;
+   margin-bottom: 10rem;
+   align-items: flex-end;
+
+}
+
+.fylo{
+
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 4rem;
+    background-color: var(--c-blue);
+    border-top-right-radius: 100px;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    padding-left:2rem;
+    padding-top:2rem;
+    padding-bottom: 2rem;
+    padding-right:8rem;
+
+    gap:1.5rem;
+    
+}
+
+.fylo_logo{
+
+    width:137px;
+    height: 44px;
+
+}
+
+.icons{
+
+    display:flex;
+    gap:1rem;
+
+}
+
+.icon{
+
+    background-color: var(--c-darkblue);
+    display: flex;
+    padding:0.5rem;
+    height: 48px;
+    width: 48px;
+    align-items: center;
+    justify-content: center;
+    border-radius:12px;
+
+}
+
+.storage_info{
+
+    display: flex;
+    flex-direction: column;
+    background-color: var(--c-blue);
+    border-radius: 12px;
+    gap:0.5rem;
+    justify-content: center;
+    height: max-content;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+   
+}
+
+
+.info_cloud{
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: -2rem;
+
+}
+
+.cloud_elements{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+/*Inizio Nuvola*/
+.storage_cloud{
+
+    background-color: white;
+    border-radius: 12px;
+    width: max-content;
+    padding:0.6rem 1rem;
+   /*posizione nuvola*/
+    /*
+    position: absolute;
+    top:25%;
+    right:21%;
+   */
+    
+    
+}
+
+.storage_cloud h1{
+
+    font-family: var(--ff-raleway);
+    font-weight: 700;
+    color: black;
+    font-size: 1.8rem;
+
+}
+
+
+.storage_cloud p{
+
+    font-family: var(--ff-raleway);
+    font-weight: 400;
+    color:var(--c-grey);
+    font-size: 0.6rem;
+
+}
+
+.info{
+
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    justify-content: center;
+
+}
+
+.triangel{
+
+    width:0;
+    height:0;
+    border-bottom: 30px solid transparent;
+    border-right: 30px solid white;
+    border-left: 30px solid transparent;
+    border-top: 30px solid transparent;
+    margin-top:-2rem;
+
+    /*
+    position:absolute;
+    top:1rem;
+    left:4.65rem;
+    */
+
+}
+/*Fine Nuvola*/
+
+
+.used_storage{
+
+    color: white;
+    font-family: var(--ff-raleway);
+    font-size: 0.8rem;
+    font-weight: 400;
+
+}
+
+.used_storage span{
+
+    font-weight: 700;
+
+}
+
+.total_storage{
+
+    color: white;
+    font-family: var(--ff-raleway);
+    font-size: 0.7rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+.skill_bar{
+
+    width:450px;
+    height:18px;
+    border-radius: 2rem;
+    background-color: var(--c-darkblue);
+    display: flex;
+    align-items: center;
+
+
+}
+
+.level{
+
+    width:82%;
+    height:14px;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    /*
+    linear-gradient(hsl(6, 100%, 80%) to hsl(335, 100%, 65%));
+    */
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+
+}
+
+
+.button{
+
+    background-color: white;
+    border-radius: 50%;
+    width:14px;
+    height: 14px;
+    
+}
+
+
+@media (max-width:840px){
+
+    body{
+
+
+        background-color: var(--c-darkblue);
+        
+        background-image: url(images/bg-mobile.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        
+    
+    }
+
+    .container{
+
+        display: flex;
+        flex-direction: column;
+        gap:2rem;
+        margin-bottom: 0rem;
+        align-items: center;
+        min-width: 340px;
+     
+     }
+
+
+     .skill_bar{
+
+        width: 260px;
+        height:18px;
+        border-radius: 2rem;
+        background-color: var(--c-darkblue);
+        display: flex;
+        align-items: center;
+    
+    
+    }
+
+    .info_cloud{
+
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: -2rem;
+       
+    
+    }
+
+    .triangel{
+
+        visibility:hidden;
+
+    }
+
+    .storage_cloud{
+
+
+        position: relative;
+        top:9rem;
+        right:7rem;
+
+
+
+    }
+
+    .info_cloud{
+
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: -2rem;
+    
+    }
+
+
+
+    .storage_info{
+
+        display: flex;
+        flex-direction: column;
+        background-color: var(--c-blue);
+        border-radius: 12px;
+        gap:0.5rem;
+        justify-content: center;
+        height: max-content;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+        width:328px;
+       
+    }
+
+
+    .cloud_elements{
+
+        width:10%;
+
+    }
+
+
+}
